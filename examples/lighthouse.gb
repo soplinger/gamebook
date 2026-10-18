@@ -1,0 +1,50 @@
+# The Lighthouse at Gull Point: a short example gamebook.
+@title The Lighthouse at Gull Point
+@start gate
+
+@passage gate
+The keeper's gate creaks open onto a wet, grey headland.
+A lantern glows in the tower above, and the path forks into the dunes.
+- Take the cliff path to the tower -> tower_door
+- Follow the dunes toward the wreck -> wreck
+- Walk back to the village -> village_end
+
+@passage tower_door
+The tower door is locked. Someone has scratched a tide table into the wood.
+- Read the tide table -> tide_clue
+- Climb the rocks to the lamp-room window -> window
+- Go back to the gate -> gate
+
+@passage tide_clue
+The table says the sea falls far enough to cross the sand at dusk.
+- Wait for the tide to drop -> low_tide
+
+@passage low_tide
+Wet sand glitters in the last light. A sea cave yawns at the foot of the cliff.
+- Walk across the sand to the sea cave -> cave
+
+@passage cave
+Inside, a brass key hangs from a nail beside a faded map.
+- Take the brass key -> key
+
+@passage key
+The key turns in the lock. A spiral staircase climbs into the dark.
+- Climb the stairs to the lamp room -> lamp_room
+
+@passage window
+The window is narrow, but you squeeze through and drop onto the lamp-room floor.
+- Light the lamp -> lamp_room
+
+@passage lamp_room ending
+You light the lamp, and the beam sweeps across the bay. Far out, a ship turns for home.
+
+@passage wreck
+Timbers jut from the surf. Something is still tangled in the rigging.
+- Swim out to the wreck -> storm_end
+- Return to the gate -> gate
+
+@passage storm_end ending
+A cross-current takes you under before you reach the timbers. The tide keeps the rest of the story.
+
+@passage village_end ending
+You never learn what the light was for, but the fire in the inn is warm tonight.
